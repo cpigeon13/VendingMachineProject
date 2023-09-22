@@ -73,7 +73,6 @@ public class VendingMachine {
 
         String newID = CreateID();
         Item newItem = new Item(name, price, newID, quantity);
-        IDs.add(newID);
         ItemList.add(newItem);
     }
     /*
