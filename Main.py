@@ -19,12 +19,11 @@ class Item:
         return str(self.ID) + " - " + str(self.name) + ": " + str(self.price) + " (" + str(self.quantity) + " in stock)"
     
 class VendingMachine:
-    ItemList = []
-    IDs = []
-    machineMoney = 0
-    location = ""
     def __init__(self,location):
         self.location = location
+        self.ItemList = []
+        self.IDs = []
+        self.machineMoney = 0
     @classmethod
     def addPreviousList(self,location,newItemList):
         for newItem in newItemList:
